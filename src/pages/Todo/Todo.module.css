@@ -1,0 +1,115 @@
+/* TodoTheme.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding: 20px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    width: 80%;
+  }
+}
+
+.userName {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.completedStatus {
+  margin-right: 10px;
+}
+
+.todoLabel {
+  flex: 1;
+  font-size: 18px;
+}
+
+.deleteTodo {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.deleteTodo:hover {
+  background-color: #d32f2f;
+}
+
+.logoutContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logoutButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logoutButton:hover {
+  background-color: #f57c00;
+}
