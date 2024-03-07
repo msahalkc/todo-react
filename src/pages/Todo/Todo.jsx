@@ -35,6 +35,10 @@ const todo = () => {
   },[currentUser, navigate])
 
   const updateTodo = ()=>{
+    if (currentTodo.title.trim() === "") {
+      return;
+    }
+
     let todoData = JSON.parse(localStorage.getItem("todoData"))
     todoData[currentUser.email] = [...userTodos, currentTodo]
     setUserTodos([...userTodos, currentTodo])
